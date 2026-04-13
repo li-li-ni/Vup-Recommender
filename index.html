@@ -436,7 +436,20 @@
             document.querySelector('.progress-bar').style.display = 'none';
             
             // 显示结果
-            resultDiv.style.display = 'block';
+            // 显示结果
+resultDiv.style.display = 'block';
+
+// 最后一页栗妮亚自动显示图片
+let liniaImg = document.createElement('img');
+liniaImg.src = '0592eb54b308d8978d657ae21a9659f9.png';
+liniaImg.style.cssText = `
+  width: 320px;
+  max-width: 100%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+`;
+resultDiv.appendChild(liniaImg);
         });
         
         // 更新进度条
